@@ -89,7 +89,7 @@ const Notes = (props) => {
                         </div>
                         <div className="modal-footer">
                             <button ref = {refClose} type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button disabled={incomingNote.editedtitle.length<5 || incomingNote.editeddescription.length<5} type="button" className="btn btn-primary" onClick={handleSubmit}>Update the note, just like that!</button>
+                            <button disabled={incomingNote.editedtitle.length<5 || incomingNote.editeddescription.length<5} type="button" className="btn btn-primary" onClick={handleSubmit}>Update the note</button>
                         </div>
                     </div>
                 </div>
