@@ -95,7 +95,7 @@ const Notes = (props) => {
                 </div>
             </div>
             <div>
-                <div className="row my-3">
+                <div className="row my-3 mx-1">
                     <h2>Your notes.</h2>
                     <div className="container">
                         {notes.length===0 && 'You have not written any notes. Fancy picking up the pen?'}
