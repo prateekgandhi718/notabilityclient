@@ -51,8 +51,8 @@ const Navbar = () => {
 
                         </ul>
                         {!localStorage.getItem('token') ? <form className="d-flex">
-                            <Link className="btn btn-primary mx-4" to="/login" role="button">Login</Link>
-                            <Link className="btn btn-primary mx-4" to="/signup" role="button">Sign up</Link>
+                            <Link className="btn btn-primary mx-4" style={{backgroundColor: "black"}} to="/login" role="button">Login</Link>
+                            <Link className="btn btn-primary mx-4" style={{backgroundColor: "black"}} to="/signup" role="button">Sign up</Link>
                         </form> : <><div className="btn-group" style={{marginRight: "12rem"}} >
                             <button type="button" className="btn btn-dark dropdown-toggle btn-sm" data-bs-toggle="dropdown" aria-expanded="false" onClick={onUserClick} style={{ color: "whitesmoke" }}>
                             <i className="fas fa-portrait"></i>
@@ -62,7 +62,7 @@ const Navbar = () => {
                                 <li className="dropdown-item" style={{ cursor: "pointer" }}>Email: {user.email}  </li>
                                 <li className="dropdown-item" style={{ cursor: "pointer" }}>Happy note taking!</li>
                             </ul>
-                        </div><button onClick={handleLogout} className="btn btn-primary mx-4">Logout</button></>}
+                        </div><button onClick={handleLogout} className="btn btn-primary mx-4" style={{backgroundColor: "black"}}>Logout</button></>}
                     </div>
                 </div>
             </nav>
