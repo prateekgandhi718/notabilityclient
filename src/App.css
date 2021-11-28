@@ -9,7 +9,6 @@
 }
 
 body{
-  background: url(./assets/images/image3.jpg);
+  background: url(./assets/images/image3.jpg) center top fixed;
   background-size:cover;
-  /* background-repeat: repeat-y; */
 }
