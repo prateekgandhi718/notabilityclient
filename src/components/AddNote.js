@@ -31,16 +31,18 @@ const AddNote = (props) => {
                 <form>
                     <div className="mb-3">
                         <label htmlFor="title" className="form-label">Title</label>
+                        <div id="emailHelp" className="form-text" style = {{marginTop: "-10px"}}>(Minimum length is 5)</div>
                         <input type="text" className="form-control" id="title" name="title" aria-describedby="emailHelp" onChange = {onChange} value={incomingNote.title} minLength= {5} required />
                         
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="description" className="form-label">description</label>
+                        <label htmlFor="description" className="form-label">Description</label>
+                        <div id="emailHelp" className="form-text" style = {{marginTop: "-10px"}}>(Minimum length is 5)</div>
                         <input type="text" className="form-control" id="description" name="description" onChange = {onChange} value={incomingNote.description} minLength= {5} required />
                     </div>
 
                     <div className="mb-3">
-                        <label htmlFor="tag" className="form-label">tag</label>
+                        <label htmlFor="tag" className="form-label">Tag</label>
                         <input type="text" className="form-control" id="tag" name="tag" onChange = {onChange} value = {incomingNote.tag}/>
                     </div>
                     
@@ -50,5 +52,6 @@ const AddNote = (props) => {
         </div>
     )
 }
+
 
 export default AddNote
