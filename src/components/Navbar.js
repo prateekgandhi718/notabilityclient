@@ -53,7 +53,7 @@ const Navbar = () => {
                         {!localStorage.getItem('token') ? <form className="d-flex">
                             <Link className="btn btn-primary mx-4" to="/login" role="button">Login</Link>
                             <Link className="btn btn-primary mx-4" to="/signup" role="button">Sign up</Link>
-                        </form> : <><div className="btn-group" style={{marginRight: "18rem"}} >
+                        </form> : <><div className="btn-group" style={{marginRight: "12rem"}} >
                             <button type="button" className="btn btn-dark dropdown-toggle btn-sm" data-bs-toggle="dropdown" aria-expanded="false" onClick={onUserClick} style={{ color: "whitesmoke" }}>
                             <i className="fas fa-portrait"></i>
                             </button>
