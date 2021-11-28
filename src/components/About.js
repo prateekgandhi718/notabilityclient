@@ -7,7 +7,7 @@ const About = () => {
 
 
     return (
-        <div className="container">
+        <div className="container" style = {{fontWeight: "bolder"}}>
             <hr />
             <div className="container">
                 <h1>What is Notability on Cloud?</h1>
