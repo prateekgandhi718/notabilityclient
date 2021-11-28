@@ -11,4 +11,5 @@
 body{
   background: url(./assets/images/image3.jpg) center top fixed;
   background-size:cover;
+  overflow: hidden;
 }
