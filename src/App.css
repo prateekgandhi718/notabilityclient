@@ -5,8 +5,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root{
+body{
   background: url(./assets/images/image3.jpg);
-  height: 120vh;
+  height: 100vh;
   background-size: cover;
 }
