@@ -27,7 +27,7 @@ function App() {
     }, 1500);
   }
   return (
-    <>
+    <div className = "superContainer">
       <NoteState>
         <Router>
           <Navbar />
@@ -50,7 +50,7 @@ function App() {
           </div>
         </Router>
       </NoteState>
-    </>
+    </div>
   );
 }
 
