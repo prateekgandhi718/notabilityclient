@@ -5,8 +5,3 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body{
-  background: url(./assets/images/image3.jpg);
-  height: auto;
-  background-size: cover;
-}
