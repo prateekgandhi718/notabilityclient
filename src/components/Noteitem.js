@@ -13,8 +13,8 @@ const Noteitem = (props) => {
             <div className="card-body">
                 <h5 className="card-title">{props.noteprop.title}</h5>
                 <p className="card-text">{props.noteprop.description}</p>
-                <i className="fas fa-trash mx-2" onClick = { ()=>{deleteNote(props.noteprop._id); props.showAlertProp("Whoosh! It's gone.", "warning")}}></i>
-                <i className="far fa-edit mx-2" onClick ={()=>{ props.updateNoteProp(props.noteprop) }} ></i>
+                <i className="fas fa-trash mx-2" style = {{cursor: "pointer"}} onClick = { ()=>{deleteNote(props.noteprop._id); props.showAlertProp("Whoosh! It's gone.", "warning")}}></i>
+                <i className="far fa-edit mx-2" style = {{cursor: "pointer"}} onClick ={()=>{ props.updateNoteProp(props.noteprop) }} ></i>
             </div>
         </div>
     </div>
