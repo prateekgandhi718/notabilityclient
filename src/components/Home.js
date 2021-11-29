@@ -18,7 +18,7 @@ const Home = (props) => {
         if (myDate.getHours() < 12) {
             settime('morning');
         }
-        else if (myDate.getHours() > 12 & myDate.getHours() < 17){
+        else if (myDate.getHours() >= 12 & myDate.getHours() <= 17){
             settime('afternoon');
         }
         else{
@@ -43,7 +43,7 @@ const Home = (props) => {
     return (
         <div>
             <h1 className ="mx-2 my-1">Good {time}, {user.name}.</h1>
-            <h5 className = "mx-3 my-2">It's {myDate.toLocaleString('default', {weekday: 'long'})}, {myDate.toLocaleString('default', {month: 'long'})} {myDate.getDate()} </h5>
+            <h5 className = "mx-2 my-2">It's {myDate.toLocaleString('default', {weekday: 'long'})}, {myDate.toLocaleString('default', {month: 'long'})} {myDate.getDate()} </h5>
             <Notes showAlertProp = {props.showAlertProp} />
 
         </div>
