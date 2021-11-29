@@ -44,6 +44,7 @@ const Home = (props) => {
         <div>
             <h1 className ="mx-2 my-1">Good {time}, {typeof user.name === 'string' ? user.name.split(" ")[0] : ' '}.</h1>
             <h5 className = "mx-2 my-2">It's {myDate.toLocaleString('default', {weekday: 'long'})}, {myDate.toLocaleString('default', {month: 'long'})} {myDate.getDate()} </h5>
+            <h6 className= "mx-2 my-2">{myDate.toLocaleString('default', {weekday: 'long'}) === 'Monday' ? 'Happy monday! Or as I like to think of it pre-pre-pre-pre friday.' : myDate.toLocaleString('default', {weekday: 'long'}) !== 'Saturday' || 'Sunday' ? 'Have a great day!' : 'Hope your weekend is going great!'}</h6>
             <Notes showAlertProp = {props.showAlertProp} />
 
         </div>
