@@ -42,7 +42,7 @@ const Home = (props) => {
 
     return (
         <div>
-            <h1 className ="mx-2 my-1">Good {time}, {user.name}.</h1>
+            <h1 className ="mx-2 my-1">Good {time}, {typeof user.name === 'string' ? user.name.split(" ")[0] : ' '}.</h1>
             <h5 className = "mx-2 my-2">It's {myDate.toLocaleString('default', {weekday: 'long'})}, {myDate.toLocaleString('default', {month: 'long'})} {myDate.getDate()} </h5>
             <Notes showAlertProp = {props.showAlertProp} />
 
